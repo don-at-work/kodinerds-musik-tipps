@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.kodinerds.musiktipps" name="Kodinerds Musik-Tipps" version="1.4.1" provider-name="Perplexity AI (Claude)">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="plugin.video.youtube" version="7.0.0"/>
+        <import addon="script.module.requests" version="2.31.0"/>
+        <import addon="script.module.beautifulsoup4" version="4.11.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de">YouTube Videos aus Kodinerds Musik-Tipps Thread</summary>
+        <summary lang="en">YouTube Videos from Kodinerds Music Tips Thread</summary>
+        <description lang="de">Durchsucht den Kodinerds "Musik-Tipps" Thread. Bei neuesten Videos werden Benutzername, Interpret und Titel angezeigt. Reihenfolge aus Forum wird beibehalten.</description>
+        <description lang="en">Scans Kodinerds "Music Tips" thread. Shows username, artist and title for latest videos. Maintains forum order.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <forum>https://www.kodinerds.net/thread/13225-musik-tipps</forum>
+        <website>https://www.kodinerds.net</website>
+        <news>
+v1.4.1 (2026-01-28)
+- Bugfix: Cache-Kompatibilität (String -> Dict)
+- Alter Cache wird automatisch konvertiert
+- Bessere Fehlerbehandlung
+- Mehr Logging für Debugging
+
+v1.4.0 (2026-01-28)
+- Benutzernamen bei "Neueste Videos"
+- Format: [User] Num. Interpret - Titel
+
+v1.3.0 (2026-01-28)
+- YouTube oEmbed API für Titel/Interpret
+
+v1.2.0 (2026-01-27)
+- BBCode [media]-Tag Erkennung
+
+v1.1.0 (2026-01-27)
+- Hauptmenü mit "Neueste Videos"
+
+v1.0.0 (2026-01-27)
+- Initiales Release
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
