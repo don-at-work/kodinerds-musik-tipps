@@ -18,6 +18,7 @@
         <license>MIT</license>
         <forum>https://www.kodinerds.net/thread/13225-musik-tipps</forum>
         <website>https://www.kodinerds.net</website>
+        <source>https://github.com/don-at-work/kodinerds-musik-tipps</source>
         <news>
 v1.4.1 (2026-01-28)
 - Bugfix: Cache-Kompatibilität (String -> Dict)
